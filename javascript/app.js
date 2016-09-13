@@ -16,16 +16,9 @@ var articleCounter = 0;
 
 function runQuery(numArticles, queryURL) {
   // AJAX FUnction
-  $.ajax({
-      url: 'queryURL',
-      type: 'GET',
-    })
+  $.ajax({url: queryURL, type: 'GET', })
     .done(function(NYTData) {
       // logging to console
-      console.log("---------------");
-      console.log(queryURL);
-      console.log(basicQuery);
-      console.log(numArticles);
       console.log(NYTData);
     });
 }
