@@ -10,3 +10,5 @@ https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=e0130c2a061f49e
 Working API:
 
 https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=e0130c2a061f49eca6cca1992cc2d736&q=obama&begin_date=19990101&end_date=20100101
+
+https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=e0130c2a061f49eca6cca1992cc2d736&q=trump
