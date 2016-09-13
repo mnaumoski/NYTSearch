@@ -26,6 +26,17 @@ function runQuery(numArticles, queryURL) {
                 console.log(NYTData.response.docs[i].byline.original);
                 console.log(NYTData.response.docs[i].section_name);
                 console.log(NYTData.response.docs[i].pub_date);
+
+                // start dumping into HTML starting here
+                var wellSection = $("<div>");
+                wellSection.addClass('well');
+                wellSection.attr('id', 'articleWell-' + i);
+                $("#wellSection").append(wellSection);
+                // attach content to well
+                $("#articleWell-" + i).append("<h3>" + NYTData.response.docs[i].headline.main + "</h3>");
+                // $("#articleWell-" + i).append("<h4>" + NYTData.response.section_name + "</h4>");
+                // $("#articleWell-" + i).append('<h2>' + NYTData.response.byline.original + "</h2>");
+                // $("#articleWell-" + i).append('<a href=' + NYTData.response.web_url + '</a>');
             }
 
 
